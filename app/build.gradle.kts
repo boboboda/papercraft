@@ -14,11 +14,11 @@ val testRewardedId = "ca-app-pub-3940256099942544/5224354917"
 val testInterstitialId = "ca-app-pub-3940256099942544/1033173712"
 
 android {
-    namespace = "com.buyoungsil.papercraft"
+    namespace = "com.buyoungsil.papercraftlab"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.buyoungsil.papercraft"
+        applicationId = "com.buyoungsil.papercraftlab"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
