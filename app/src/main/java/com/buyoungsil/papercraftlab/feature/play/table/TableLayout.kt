@@ -20,13 +20,13 @@ import android.annotation.SuppressLint
  * 자르기 화면 배치만 담당. 무엇을 그릴지는 슬롯으로 받는다.
  *
  *  ■ 세로형 (폰 세로, 태블릿 세로)          ■ 가로형 (폰 가로, 태블릿 가로)
- *  ┌──────────────────────┐              ┌──────┬──────────────┬──────┐
- *  │ info                 │              │ info │              │      │
- *  │ ┌peek┐               │              │      │              │      │
- *  │ └────┘  table        │              │ 조이 │    table     │ 자르기│
- *  │                      │              │ 스틱 │  (peek 좌상단) │ 버튼 │
- *  ├──────────────────────┤              │      │              │      │
- *  │ 조이스틱      자르기 │              └──────┴──────────────┴──────┘
+ *  ┌──────────────────────┐              ┌─────────────────────────────┐
+ *  │ info                 │              │ info (전체 폭, 한 줄)       │
+ *  │ ┌peek┐               │              ├──────┬──────────────┬───────┤
+ *  │ └────┘  table        │              │      │ ┌peek┐       │       │
+ *  │                      │              │ 조이 │ └────┘ table │ 자르기│
+ *  ├──────────────────────┤              │ 스틱 │              │ 버튼  │
+ *  │ 조이스틱      자르기 │              └──────┴──────────────┴───────┘
  *  └──────────────────────┘
  *
  * 조작부 크기는 화면 짧은 변 기준으로 정해서 슬롯에 넘겨 준다 (손가락 크기는 화면과 상관없으니 dp 고정 범위).
@@ -51,35 +51,40 @@ fun TableLayout(
         }
 
         if (landscape) {
-            Row(
-                modifier = Modifier.fillMaxSize().padding(12.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                // 왼쪽: 정보 + 조이스틱
-                Column(
-                    modifier = Modifier.fillMaxHeight(),
-                    verticalArrangement = Arrangement.SpaceBetween,
-                    horizontalAlignment = Alignment.CenterHorizontally
+            Column(Modifier.fillMaxSize().padding(12.dp)) {
+                // 위: 정보 줄 (전체 폭을 주면 한 줄로 보인다)
+                // ★ 예전엔 정보 줄이 왼쪽 칸에 들어 있어서, 폭이 넓은 화면(태블릿·폰 가로)에서
+                //    왼쪽 칸이 화면 전체로 늘어나 테이블과 자르기 버튼이 밀려났다.
+                Box(Modifier.fillMaxWidth().padding(bottom = 8.dp)) { info() }
+
+                Row(
+                    modifier = Modifier.weight(1f).fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Box(Modifier.padding(bottom = 8.dp)) { info() }
-                    joystick(controlSize)
-                }
-                // 가운데: 테이블 (+ 참고 창)
-                Box(
-                    modifier = Modifier
-                        .weight(1f)
-                        .fillMaxHeight()
-                        .padding(horizontal = 12.dp)
-                ) {
-                    table(Modifier.fillMaxSize())
-                    Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { peek() }
-                }
-                // 오른쪽: 자르기 버튼 (아래쪽 = 엄지 위치)
-                Box(
-                    modifier = Modifier.fillMaxHeight(),
-                    contentAlignment = Alignment.BottomCenter
-                ) {
-                    cutButton(controlSize)
+                    // 왼쪽: 조이스틱 (아래쪽 = 왼손 엄지 위치)
+                    Box(
+                        modifier = Modifier.fillMaxHeight(),
+                        contentAlignment = Alignment.BottomCenter
+                    ) {
+                        joystick(controlSize)
+                    }
+                    // 가운데: 테이블 (+ 참고 창)
+                    Box(
+                        modifier = Modifier
+                            .weight(1f)
+                            .fillMaxHeight()
+                            .padding(horizontal = 12.dp)
+                    ) {
+                        table(Modifier.fillMaxSize())
+                        Box(Modifier.align(Alignment.TopStart).padding(8.dp)) { peek() }
+                    }
+                    // 오른쪽: 자르기 버튼 (아래쪽 = 오른손 엄지 위치)
+                    Box(
+                        modifier = Modifier.fillMaxHeight(),
+                        contentAlignment = Alignment.BottomCenter
+                    ) {
+                        cutButton(controlSize)
+                    }
                 }
             }
         } else {
