@@ -13,6 +13,10 @@ plugins {
 val testRewardedId = "ca-app-pub-3940256099942544/5224354917"
 val testInterstitialId = "ca-app-pub-3940256099942544/1033173712"
 
+// ★ 내 실제 광고 단위 (AdMob 앱: com.buyoungsil.papercraftlab) — release 에서만 사용
+val releaseRewardedId = "ca-app-pub-8596470561558049/8093150926"
+val releaseInterstitialId = "ca-app-pub-8596470561558049/7228635121"
+
 android {
     namespace = "com.buyoungsil.papercraftlab"
     compileSdk = 36
@@ -21,7 +25,7 @@ android {
         applicationId = "com.buyoungsil.papercraftlab"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        versionCode = 2
         versionName = "0.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -40,10 +44,8 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // TODO(출시 전): AdMob 에서 만든 광고 단위 ID 로 교체
-            //   "ca-app-pub-8596470561558049/숫자" 형태
-            buildConfigField("String", "AD_UNIT_REWARDED", "\"$testRewardedId\"")
-            buildConfigField("String", "AD_UNIT_INTERSTITIAL", "\"$testInterstitialId\"")
+            buildConfigField("String", "AD_UNIT_REWARDED", "\"$releaseRewardedId\"")
+            buildConfigField("String", "AD_UNIT_INTERSTITIAL", "\"$releaseInterstitialId\"")
         }
     }
 

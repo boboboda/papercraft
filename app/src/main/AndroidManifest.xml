@@ -22,7 +22,7 @@
         <!-- ★ AdMob 앱 ID (내 앱). 없으면 광고 SDK 가 앱 시작 시 바로 죽는다 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8596470561558049~6857794564" />
+            android:value="ca-app-pub-8596470561558049~1708715136" />
 
         <!-- ★ 광고 SDK 초기화·로딩을 백그라운드로 미룸 → 첫 화면이 빨리 뜸 -->
         <meta-data
