@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 6단계(Firebase), 9단계(광고)에서 필요 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 자르기·판정 시 진동 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".PaperCraftApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Papercraft"
+        tools:targetApi="36">
+
+        <!-- ★ AdMob 앱 ID (내 앱). 없으면 광고 SDK 가 앱 시작 시 바로 죽는다 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8596470561558049~6857794564" />
+
+        <!-- ★ 광고 SDK 초기화·로딩을 백그라운드로 미룸 → 첫 화면이 빨리 뜸 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <!-- 화면 방향은 고정하지 않음 (폰·태블릿 모두 세로·가로 허용) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Papercraft">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

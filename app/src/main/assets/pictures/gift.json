@@ -1,0 +1,58 @@
+{
+  "id": "gift",
+  "name": "선물 상자",
+  "noun": "선물 상자",
+  "level": 1,
+  "practice": false,
+  "description": "커다란 네모와 긴 띠를 잘라요.",
+  "pieces": [
+    {
+      "id": "box",
+      "name": "상자",
+      "color": "#D8452F",
+      "adjBig": "상자가 큰",
+      "adjSmall": "상자가 작은",
+      "shape": { "type": "polygon", "points": [[70, 140], [230, 140], [230, 262], [70, 262]] }
+    },
+    {
+      "id": "lid",
+      "name": "뚜껑",
+      "color": "#B8352A",
+      "adjBig": "뚜껑이 큰",
+      "adjSmall": "뚜껑이 작은",
+      "shape": { "type": "polygon", "points": [[58, 115], [242, 115], [242, 145], [58, 145]] }
+    },
+    {
+      "id": "ribbonV",
+      "name": "세로 리본",
+      "color": "#F5D547",
+      "adjBig": "리본이 굵은",
+      "adjSmall": "리본이 가는",
+      "shape": { "type": "polygon", "points": [[140, 115], [160, 115], [160, 262], [140, 262]] }
+    },
+    {
+      "id": "ribbonH",
+      "name": "가로 리본",
+      "color": "#F5D547",
+      "adjBig": "리본이 굵은",
+      "adjSmall": "리본이 가는",
+      "shape": { "type": "polygon", "points": [[70, 188], [230, 188], [230, 206], [70, 206]] }
+    },
+    {
+      "id": "bowL",
+      "name": "왼쪽 매듭",
+      "color": "#F0B429",
+      "adjBig": "매듭이 큰",
+      "adjSmall": "매듭이 작은",
+      "shape": { "type": "polygon", "points": [[150, 115], [104, 82], [110, 116]] }
+    },
+    {
+      "id": "bowR",
+      "name": "오른쪽 매듭",
+      "color": "#F0B429",
+      "adjBig": "매듭이 큰",
+      "adjSmall": "매듭이 작은",
+      "shape": { "type": "polygon", "points": [[150, 115], [196, 82], [190, 116]] }
+    }
+  ]
+}

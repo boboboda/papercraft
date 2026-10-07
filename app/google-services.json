@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150466632982",
+    "project_id": "papercraft-1c6d1",
+    "storage_bucket": "papercraft-1c6d1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150466632982:android:a51f8b2a30a36d9c4b4437",
+        "android_client_info": {
+          "package_name": "com.buyoungsil.papercraft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Q0l3zFksEaRyKr-hIEMvTAdMkcs24LY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

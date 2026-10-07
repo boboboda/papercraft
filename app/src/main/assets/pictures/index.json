@@ -1,0 +1,35 @@
+{
+  "practice": "practice",
+  "chapters": [
+    {
+      "id": 1,
+      "name": "네모 나라",
+      "theme": "직선만",
+      "pictures": ["house", "gift", "pencil", "train", "robot", "mailbox"]
+    },
+    {
+      "id": 2,
+      "name": "뾰족 마을",
+      "theme": "사선·삼각형",
+      "pictures": ["boat", "tree", "rocket", "tent", "fish", "pyramid"]
+    },
+    {
+      "id": 3,
+      "name": "동글 공원",
+      "theme": "동그라미",
+      "pictures": ["snowman", "signal", "car", "ladybug", "sunflower", "balloons"]
+    },
+    {
+      "id": 4,
+      "name": "말랑 동물원",
+      "theme": "타원·곡선",
+      "pictures": ["cat", "duck", "penguin", "mushroom", "apple", "snail"]
+    },
+    {
+      "id": 5,
+      "name": "꼬불 숲",
+      "theme": "오목·자유 곡선",
+      "pictures": ["rainbow", "star", "heart", "dino", "octopus", "owl"]
+    }
+  ]
+}

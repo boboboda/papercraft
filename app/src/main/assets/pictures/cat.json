@@ -1,0 +1,74 @@
+{
+  "id": "cat",
+  "name": "고양이",
+  "noun": "고양이",
+  "level": 3,
+  "practice": false,
+  "description": "곡선이 많고 눈, 코처럼 작은 조각이 있어요.",
+  "pieces": [
+    {
+      "id": "cushion",
+      "name": "방석",
+      "color": "#6BBF7A",
+      "adjBig": "방석이 큰",
+      "adjSmall": "방석이 작은",
+      "shape": { "type": "polygon", "points": [[60, 255], [240, 255], [240, 285], [60, 285]] }
+    },
+    {
+      "id": "body",
+      "name": "몸통",
+      "color": "#F0913F",
+      "adjBig": "통통한",
+      "adjSmall": "홀쭉한",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 205, "rx": 62, "ry": 52 }
+    },
+    {
+      "id": "earL",
+      "name": "왼쪽 귀",
+      "color": "#F4A259",
+      "adjBig": "귀가 쫑긋한",
+      "adjSmall": "귀가 작은",
+      "shape": { "type": "polygon", "points": [[106, 100], [98, 40], [144, 80]] }
+    },
+    {
+      "id": "earR",
+      "name": "오른쪽 귀",
+      "color": "#F4A259",
+      "adjBig": "귀가 쫑긋한",
+      "adjSmall": "귀가 작은",
+      "shape": { "type": "polygon", "points": [[194, 100], [202, 40], [156, 80]] }
+    },
+    {
+      "id": "head",
+      "name": "머리",
+      "color": "#F4A259",
+      "adjBig": "머리가 큰",
+      "adjSmall": "머리가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 125, "rx": 50, "ry": 50 }
+    },
+    {
+      "id": "eyeL",
+      "name": "왼쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "깜짝 놀란",
+      "adjSmall": "졸린",
+      "shape": { "type": "ellipse", "cx": 131, "cy": 120, "rx": 8, "ry": 8 }
+    },
+    {
+      "id": "eyeR",
+      "name": "오른쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "깜짝 놀란",
+      "adjSmall": "졸린",
+      "shape": { "type": "ellipse", "cx": 169, "cy": 120, "rx": 8, "ry": 8 }
+    },
+    {
+      "id": "nose",
+      "name": "코",
+      "color": "#EF7A8C",
+      "adjBig": "코가 큰",
+      "adjSmall": "코가 콩알만한",
+      "shape": { "type": "polygon", "points": [[141, 136], [159, 136], [150, 147]] }
+    }
+  ]
+}

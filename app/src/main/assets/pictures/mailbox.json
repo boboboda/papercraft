@@ -1,0 +1,58 @@
+{
+  "id": "mailbox",
+  "name": "우체통",
+  "noun": "우체통",
+  "level": 1,
+  "practice": false,
+  "description": "반듯한 네모와 가는 기둥이 있어요.",
+  "pieces": [
+    {
+      "id": "ground",
+      "name": "땅",
+      "color": "#6BBF7A",
+      "adjBig": "땅이 넓은",
+      "adjSmall": "땅이 좁은",
+      "shape": { "type": "polygon", "points": [[60, 264], [240, 264], [240, 282], [60, 282]] }
+    },
+    {
+      "id": "post",
+      "name": "기둥",
+      "color": "#7A7F87",
+      "adjBig": "기둥이 굵은",
+      "adjSmall": "기둥이 가는",
+      "shape": { "type": "polygon", "points": [[138, 190], [162, 190], [162, 270], [138, 270]] }
+    },
+    {
+      "id": "top",
+      "name": "지붕",
+      "color": "#9E2A20",
+      "adjBig": "지붕이 큰",
+      "adjSmall": "지붕이 작은",
+      "shape": { "type": "polygon", "points": [[84, 54], [216, 54], [216, 76], [84, 76]] }
+    },
+    {
+      "id": "box",
+      "name": "몸통",
+      "color": "#D8452F",
+      "adjBig": "우체통이 큰",
+      "adjSmall": "우체통이 작은",
+      "shape": { "type": "polygon", "points": [[92, 74], [208, 74], [208, 196], [92, 196]] }
+    },
+    {
+      "id": "slot",
+      "name": "투입구",
+      "color": "#2E2A26",
+      "adjBig": "투입구가 큰",
+      "adjSmall": "투입구가 작은",
+      "shape": { "type": "polygon", "points": [[116, 98], [184, 98], [184, 110], [116, 110]] }
+    },
+    {
+      "id": "label",
+      "name": "이름표",
+      "color": "#FFFFFF",
+      "adjBig": "이름표가 큰",
+      "adjSmall": "이름표가 작은",
+      "shape": { "type": "polygon", "points": [[120, 128], [180, 128], [180, 166], [120, 166]] }
+    }
+  ]
+}

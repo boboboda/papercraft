@@ -1,0 +1,66 @@
+{
+  "id": "rocket",
+  "name": "로켓",
+  "noun": "로켓",
+  "level": 2,
+  "practice": false,
+  "description": "뾰족한 머리와 날개, 불꽃을 잘라요.",
+  "pieces": [
+    {
+      "id": "flame",
+      "name": "불꽃",
+      "color": "#F0913F",
+      "adjBig": "불꽃이 큰",
+      "adjSmall": "불꽃이 작은",
+      "shape": { "type": "polygon", "points": [[130, 218], [170, 218], [150, 276]] }
+    },
+    {
+      "id": "flameIn",
+      "name": "속 불꽃",
+      "color": "#F5D547",
+      "adjBig": "불꽃이 큰",
+      "adjSmall": "불꽃이 작은",
+      "shape": { "type": "polygon", "points": [[140, 218], [160, 218], [150, 252]] }
+    },
+    {
+      "id": "finL",
+      "name": "왼쪽 날개",
+      "color": "#D8452F",
+      "adjBig": "날개가 큰",
+      "adjSmall": "날개가 작은",
+      "shape": { "type": "polygon", "points": [[126, 166], [92, 232], [126, 216]] }
+    },
+    {
+      "id": "finR",
+      "name": "오른쪽 날개",
+      "color": "#D8452F",
+      "adjBig": "날개가 큰",
+      "adjSmall": "날개가 작은",
+      "shape": { "type": "polygon", "points": [[174, 166], [208, 232], [174, 216]] }
+    },
+    {
+      "id": "body",
+      "name": "몸체",
+      "color": "#E8E6E1",
+      "adjBig": "로켓이 큰",
+      "adjSmall": "로켓이 작은",
+      "shape": { "type": "polygon", "points": [[126, 92], [150, 36], [174, 92], [174, 222], [126, 222]] }
+    },
+    {
+      "id": "stripe",
+      "name": "띠",
+      "color": "#D8452F",
+      "adjBig": "띠가 굵은",
+      "adjSmall": "띠가 가는",
+      "shape": { "type": "polygon", "points": [[126, 178], [174, 178], [174, 192], [126, 192]] }
+    },
+    {
+      "id": "window",
+      "name": "창문",
+      "color": "#6FB7E9",
+      "adjBig": "창문이 큰",
+      "adjSmall": "창문이 작은",
+      "shape": { "type": "polygon", "points": [[150, 104], [164, 122], [150, 140], [136, 122]] }
+    }
+  ]
+}

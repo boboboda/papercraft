@@ -1,0 +1,98 @@
+{
+  "id": "snowman",
+  "name": "눈사람",
+  "noun": "눈사람",
+  "level": 2,
+  "practice": false,
+  "description": "크기가 다른 동그라미 세 개를 잘라요.",
+  "pieces": [
+    {
+      "id": "snow",
+      "name": "눈밭",
+      "color": "#DDEBF5",
+      "adjBig": "눈밭이 넓은",
+      "adjSmall": "눈밭이 좁은",
+      "shape": { "type": "polygon", "points": [[16, 262], [284, 262], [284, 288], [16, 288]] }
+    },
+    {
+      "id": "bottom",
+      "name": "아래 몸",
+      "color": "#FFFFFF",
+      "adjBig": "배가 볼록한",
+      "adjSmall": "배가 홀쭉한",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 218, "rx": 54, "ry": 54 }
+    },
+    {
+      "id": "middle",
+      "name": "가운데 몸",
+      "color": "#FFFFFF",
+      "adjBig": "몸이 큰",
+      "adjSmall": "몸이 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 140, "rx": 40, "ry": 40 }
+    },
+    {
+      "id": "head",
+      "name": "머리",
+      "color": "#FFFFFF",
+      "adjBig": "머리가 큰",
+      "adjSmall": "머리가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 82, "rx": 28, "ry": 28 }
+    },
+    {
+      "id": "hatTop",
+      "name": "모자",
+      "color": "#2E2A26",
+      "adjBig": "모자가 큰",
+      "adjSmall": "모자가 작은",
+      "shape": { "type": "polygon", "points": [[128, 18], [172, 18], [172, 54], [128, 54]] }
+    },
+    {
+      "id": "brim",
+      "name": "모자 챙",
+      "color": "#2E2A26",
+      "adjBig": "챙이 넓은",
+      "adjSmall": "챙이 좁은",
+      "shape": { "type": "polygon", "points": [[112, 50], [188, 50], [188, 62], [112, 62]] }
+    },
+    {
+      "id": "eyeL",
+      "name": "왼쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 140, "cy": 78, "rx": 6, "ry": 6 }
+    },
+    {
+      "id": "eyeR",
+      "name": "오른쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 160, "cy": 78, "rx": 6, "ry": 6 }
+    },
+    {
+      "id": "nose",
+      "name": "당근 코",
+      "color": "#F0913F",
+      "adjBig": "코가 긴",
+      "adjSmall": "코가 짧은",
+      "shape": { "type": "polygon", "points": [[148, 84], [178, 91], [148, 96]] }
+    },
+    {
+      "id": "button1",
+      "name": "위 단추",
+      "color": "#D8452F",
+      "adjBig": "단추가 큰",
+      "adjSmall": "단추가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 130, "rx": 7, "ry": 7 }
+    },
+    {
+      "id": "button2",
+      "name": "아래 단추",
+      "color": "#D8452F",
+      "adjBig": "단추가 큰",
+      "adjSmall": "단추가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 154, "rx": 7, "ry": 7 }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "car",
+  "name": "자동차",
+  "noun": "자동차",
+  "level": 2,
+  "practice": false,
+  "description": "동그란 바퀴와 사다리꼴 창문이 있어요.",
+  "pieces": [
+    {
+      "id": "road",
+      "name": "도로",
+      "color": "#5B5F66",
+      "adjBig": "도로가 넓은",
+      "adjSmall": "도로가 좁은",
+      "shape": { "type": "polygon", "points": [[10, 232], [290, 232], [290, 252], [10, 252]] }
+    },
+    {
+      "id": "cabin",
+      "name": "지붕",
+      "color": "#B8352A",
+      "adjBig": "지붕이 큰",
+      "adjSmall": "지붕이 작은",
+      "shape": { "type": "polygon", "points": [[84, 152], [110, 100], [200, 100], [226, 152]] }
+    },
+    {
+      "id": "window",
+      "name": "창문",
+      "color": "#6FB7E9",
+      "adjBig": "창문이 큰",
+      "adjSmall": "창문이 작은",
+      "shape": { "type": "polygon", "points": [[100, 146], [118, 110], [192, 110], [210, 146]] }
+    },
+    {
+      "id": "body",
+      "name": "차체",
+      "color": "#D8452F",
+      "adjBig": "차가 큰",
+      "adjSmall": "차가 작은",
+      "shape": { "type": "polygon", "points": [[40, 148], [260, 148], [260, 206], [40, 206]] }
+    },
+    {
+      "id": "wheelL",
+      "name": "앞바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "ellipse", "cx": 96, "cy": 210, "rx": 26, "ry": 26 }
+    },
+    {
+      "id": "wheelR",
+      "name": "뒷바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "ellipse", "cx": 204, "cy": 210, "rx": 26, "ry": 26 }
+    },
+    {
+      "id": "hubL",
+      "name": "앞바퀴 휠",
+      "color": "#C9CDD2",
+      "adjBig": "휠이 큰",
+      "adjSmall": "휠이 작은",
+      "shape": { "type": "ellipse", "cx": 96, "cy": 210, "rx": 10, "ry": 10 }
+    },
+    {
+      "id": "hubR",
+      "name": "뒷바퀴 휠",
+      "color": "#C9CDD2",
+      "adjBig": "휠이 큰",
+      "adjSmall": "휠이 작은",
+      "shape": { "type": "ellipse", "cx": 204, "cy": 210, "rx": 10, "ry": 10 }
+    },
+    {
+      "id": "light",
+      "name": "전조등",
+      "color": "#F5D547",
+      "adjBig": "전조등이 큰",
+      "adjSmall": "전조등이 작은",
+      "shape": { "type": "ellipse", "cx": 248, "cy": 166, "rx": 9, "ry": 9 }
+    }
+  ]
+}

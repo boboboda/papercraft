@@ -1,0 +1,4 @@
+<resources>
+    <!-- 홈 화면·앱 서랍·설정에 보이는 앱 이름 -->
+    <string name="app_name">색종이 공작실</string>
+</resources>

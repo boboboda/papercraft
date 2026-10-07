@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 테마 아이콘(Android 13+)용 한 가지 색 버전: 종이는 테두리만, 가위는 채움 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-8">
+
+        <!-- 종이 테두리 -->
+        <path
+            android:pathData="M34,28 L74,28 Q77,28 77,31 L77,71 Q77,74 74,74 L34,74 Q31,74 31,71 L31,31 Q31,28 34,28 Z"
+            android:strokeWidth="3"
+            android:strokeColor="#FF000000" />
+
+        <!-- 가위 -->
+        <group
+            android:translateX="56"
+            android:translateY="55"
+            android:rotation="-48"
+            android:scaleX="1.12"
+            android:scaleY="1.12">
+
+            <path
+                android:pathData="M0,0 L-6.51,-2.90 M0,0 L-6.51,2.90"
+                android:strokeWidth="3.4"
+                android:strokeColor="#FF000000"
+                android:strokeLineCap="round" />
+            <path
+                android:pathData="M-15.51,-4.68 A5.0,5.0 0 1,0 -5.51,-4.68 A5.0,5.0 0 1,0 -15.51,-4.68 Z M-15.51,4.68 A5.0,5.0 0 1,0 -5.51,4.68 A5.0,5.0 0 1,0 -15.51,4.68 Z"
+                android:strokeWidth="3.2"
+                android:strokeColor="#FF000000" />
+            <path
+                android:fillColor="#FF000000"
+                android:pathData="M-3.73,2.83 Q9.95,5.79 24.36,5.62 L-2.61,-2.04 Z" />
+            <path
+                android:fillColor="#FF000000"
+                android:pathData="M-3.73,-2.83 Q9.95,-5.79 24.36,-5.62 L-2.61,2.04 Z" />
+        </group>
+    </group>
+</vector>

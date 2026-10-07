@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 런처 아이콘 앞면: 색종이 + 가위 (108dp 캔버스, 가운데 72dp 가 보이는 영역) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-8">
+
+        <!-- 종이 그림자 -->
+        <path
+            android:fillColor="#38000000"
+            android:pathData="M35.5,30.5 L75.5,30.5 Q78.5,30.5 78.5,33.5 L78.5,73.5 Q78.5,76.5 75.5,76.5 L35.5,76.5 Q32.5,76.5 32.5,73.5 L32.5,33.5 Q32.5,30.5 35.5,30.5 Z" />
+
+        <!-- 노란 색종이 -->
+        <path
+            android:fillColor="#F5D547"
+            android:pathData="M34,28 L74,28 Q77,28 77,31 L77,71 Q77,74 74,74 L34,74 Q31,74 31,71 L31,31 Q31,28 34,28 Z" />
+
+        <!-- 가위 자국 -->
+        <path
+            android:pathData="M45,74 Q46,64 56,55"
+            android:strokeWidth="2.4"
+            android:strokeColor="#B8352A"
+            android:strokeLineCap="round" />
+
+        <!-- 가위 (축 위치로 옮기고 방향 돌림) -->
+        <group
+            android:translateX="56"
+            android:translateY="55"
+            android:rotation="-48"
+            android:scaleX="1.12"
+            android:scaleY="1.12">
+
+            <!-- 손잡이 연결부 -->
+            <path
+                android:pathData="M0,0 L-6.51,-2.90 M0,0 L-6.51,2.90"
+                android:strokeWidth="3.4"
+                android:strokeColor="#D8452F"
+                android:strokeLineCap="round" />
+
+            <!-- 손잡이 고리 -->
+            <path
+                android:pathData="M-15.51,-4.68 A5.0,5.0 0 1,0 -5.51,-4.68 A5.0,5.0 0 1,0 -15.51,-4.68 Z M-15.51,4.68 A5.0,5.0 0 1,0 -5.51,4.68 A5.0,5.0 0 1,0 -15.51,4.68 Z"
+                android:strokeWidth="3.2"
+                android:strokeColor="#D8452F" />
+
+            <!-- 아래 날 -->
+            <path
+                android:fillColor="#A9B4C0"
+                android:pathData="M-3.73,2.83 Q9.95,5.79 24.36,5.62 L-2.61,-2.04 Z"
+                android:strokeWidth="0.9"
+                android:strokeColor="#3F454D"
+                android:strokeLineJoin="round" />
+
+            <!-- 위 날 -->
+            <path
+                android:fillColor="#E6ECF2"
+                android:pathData="M-3.73,-2.83 Q9.95,-5.79 24.36,-5.62 L-2.61,2.04 Z"
+                android:strokeWidth="0.9"
+                android:strokeColor="#3F454D"
+                android:strokeLineJoin="round" />
+
+            <!-- 축 -->
+            <path
+                android:fillColor="#3F454D"
+                android:pathData="M-1.80,0.00 A1.8,1.8 0 1,0 1.80,0.00 A1.8,1.8 0 1,0 -1.80,0.00 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,90 @@
+{
+  "id": "ladybug",
+  "name": "무당벌레",
+  "noun": "무당벌레",
+  "level": 2,
+  "practice": false,
+  "description": "큰 동그라미에 점을 콕콕 붙여요.",
+  "pieces": [
+    {
+      "id": "leaf",
+      "name": "나뭇잎",
+      "color": "#6BBF7A",
+      "adjBig": "잎이 큰",
+      "adjSmall": "잎이 작은",
+      "shape": { "type": "polygon", "points": [[275.2, 145.4], [276.9, 165], [273.6, 184.8], [265.7, 204.2], [253.2, 222.3], [236.8, 238.5], [217.1, 252.2], [194.8, 262.7], [170.8, 269.8], [146, 273.1], [121.3, 272.6], [97.7, 268.1], [76.2, 260], [57.4, 248.5], [42.3, 234], [31.3, 217.2], [24.8, 198.6], [23.1, 179], [26.4, 159.2], [34.3, 139.8], [46.8, 121.7], [63.2, 105.5], [82.9, 91.8], [105.2, 81.3], [129.2, 74.2], [154, 70.9], [178.7, 71.4], [202.3, 75.9], [223.8, 84], [242.6, 95.5], [257.7, 110], [268.7, 126.8]] }
+    },
+    {
+      "id": "head",
+      "name": "머리",
+      "color": "#2E2A26",
+      "adjBig": "머리가 큰",
+      "adjSmall": "머리가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 86, "rx": 32, "ry": 32 }
+    },
+    {
+      "id": "eyeL",
+      "name": "왼쪽 눈",
+      "color": "#FFFFFF",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 137, "cy": 70, "rx": 6, "ry": 6 }
+    },
+    {
+      "id": "eyeR",
+      "name": "오른쪽 눈",
+      "color": "#FFFFFF",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 163, "cy": 70, "rx": 6, "ry": 6 }
+    },
+    {
+      "id": "body",
+      "name": "몸통",
+      "color": "#D8452F",
+      "adjBig": "몸이 통통한",
+      "adjSmall": "몸이 홀쭉한",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 166, "rx": 78, "ry": 78 }
+    },
+    {
+      "id": "line",
+      "name": "가운데 줄",
+      "color": "#2E2A26",
+      "adjBig": "줄이 굵은",
+      "adjSmall": "줄이 가는",
+      "shape": { "type": "polygon", "points": [[145, 92], [155, 92], [155, 242], [145, 242]] }
+    },
+    {
+      "id": "spot1",
+      "name": "왼쪽 위 점",
+      "color": "#2E2A26",
+      "adjBig": "점이 큰",
+      "adjSmall": "점이 작은",
+      "shape": { "type": "ellipse", "cx": 110, "cy": 136, "rx": 14, "ry": 14 }
+    },
+    {
+      "id": "spot2",
+      "name": "오른쪽 위 점",
+      "color": "#2E2A26",
+      "adjBig": "점이 큰",
+      "adjSmall": "점이 작은",
+      "shape": { "type": "ellipse", "cx": 190, "cy": 136, "rx": 14, "ry": 14 }
+    },
+    {
+      "id": "spot3",
+      "name": "왼쪽 아래 점",
+      "color": "#2E2A26",
+      "adjBig": "점이 큰",
+      "adjSmall": "점이 작은",
+      "shape": { "type": "ellipse", "cx": 114, "cy": 196, "rx": 14, "ry": 14 }
+    },
+    {
+      "id": "spot4",
+      "name": "오른쪽 아래 점",
+      "color": "#2E2A26",
+      "adjBig": "점이 큰",
+      "adjSmall": "점이 작은",
+      "shape": { "type": "ellipse", "cx": 186, "cy": 196, "rx": 14, "ry": 14 }
+    }
+  ]
+}

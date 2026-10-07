@@ -1,0 +1,114 @@
+{
+  "id": "owl",
+  "name": "부엉이",
+  "noun": "부엉이",
+  "level": 3,
+  "practice": false,
+  "description": "조각이 가장 많은 마지막 그림이에요.",
+  "pieces": [
+    {
+      "id": "moon",
+      "name": "달",
+      "color": "#F6E7A8",
+      "adjBig": "달이 큰",
+      "adjSmall": "달이 작은",
+      "shape": { "type": "ellipse", "cx": 248, "cy": 52, "rx": 30, "ry": 30 }
+    },
+    {
+      "id": "branch",
+      "name": "나뭇가지",
+      "color": "#8E6B4A",
+      "adjBig": "가지가 굵은",
+      "adjSmall": "가지가 가는",
+      "shape": { "type": "polygon", "points": [[14.8, 256], [286.8, 230], [285.2, 214], [13.2, 240]] }
+    },
+    {
+      "id": "earL",
+      "name": "왼쪽 깃털",
+      "color": "#7A5634",
+      "adjBig": "깃털이 큰",
+      "adjSmall": "깃털이 작은",
+      "shape": { "type": "polygon", "points": [[100, 104], [96, 50], [134, 86]] }
+    },
+    {
+      "id": "earR",
+      "name": "오른쪽 깃털",
+      "color": "#7A5634",
+      "adjBig": "깃털이 큰",
+      "adjSmall": "깃털이 작은",
+      "shape": { "type": "polygon", "points": [[200, 104], [204, 50], [166, 86]] }
+    },
+    {
+      "id": "body",
+      "name": "몸",
+      "color": "#9C7048",
+      "adjBig": "부엉이가 통통한",
+      "adjSmall": "부엉이가 홀쭉한",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 160, "rx": 62, "ry": 80 }
+    },
+    {
+      "id": "belly",
+      "name": "배",
+      "color": "#FCE6C9",
+      "adjBig": "배가 볼록한",
+      "adjSmall": "배가 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 184, "rx": 40, "ry": 50 }
+    },
+    {
+      "id": "eyeL",
+      "name": "왼쪽 눈",
+      "color": "#FFFFFF",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 127, "cy": 122, "rx": 21, "ry": 21 }
+    },
+    {
+      "id": "eyeR",
+      "name": "오른쪽 눈",
+      "color": "#FFFFFF",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 173, "cy": 122, "rx": 21, "ry": 21 }
+    },
+    {
+      "id": "pupilL",
+      "name": "왼쪽 눈동자",
+      "color": "#2E2A26",
+      "adjBig": "눈동자가 큰",
+      "adjSmall": "눈동자가 작은",
+      "shape": { "type": "ellipse", "cx": 130, "cy": 124, "rx": 9, "ry": 9 }
+    },
+    {
+      "id": "pupilR",
+      "name": "오른쪽 눈동자",
+      "color": "#2E2A26",
+      "adjBig": "눈동자가 큰",
+      "adjSmall": "눈동자가 작은",
+      "shape": { "type": "ellipse", "cx": 170, "cy": 124, "rx": 9, "ry": 9 }
+    },
+    {
+      "id": "beak",
+      "name": "부리",
+      "color": "#F0913F",
+      "adjBig": "부리가 큰",
+      "adjSmall": "부리가 작은",
+      "shape": { "type": "polygon", "points": [[141, 144], [159, 144], [150, 162]] }
+    },
+    {
+      "id": "footL",
+      "name": "왼발",
+      "color": "#F0913F",
+      "adjBig": "발이 큰",
+      "adjSmall": "발이 작은",
+      "shape": { "type": "ellipse", "cx": 130, "cy": 238, "rx": 14, "ry": 8 }
+    },
+    {
+      "id": "footR",
+      "name": "오른발",
+      "color": "#F0913F",
+      "adjBig": "발이 큰",
+      "adjSmall": "발이 작은",
+      "shape": { "type": "ellipse", "cx": 170, "cy": 234, "rx": 14, "ry": 8 }
+    }
+  ]
+}

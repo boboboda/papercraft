@@ -1,0 +1,66 @@
+{
+  "id": "tent",
+  "name": "텐트",
+  "noun": "텐트",
+  "level": 2,
+  "practice": false,
+  "description": "큰 삼각형 안에 작은 삼각형이 있어요.",
+  "pieces": [
+    {
+      "id": "ground",
+      "name": "땅",
+      "color": "#6BBF7A",
+      "adjBig": "땅이 넓은",
+      "adjSmall": "땅이 좁은",
+      "shape": { "type": "polygon", "points": [[24, 226], [276, 226], [276, 250], [24, 250]] }
+    },
+    {
+      "id": "pineTrunk",
+      "name": "나무 기둥",
+      "color": "#8E6B4A",
+      "adjBig": "기둥이 굵은",
+      "adjSmall": "기둥이 가는",
+      "shape": { "type": "polygon", "points": [[254, 190], [266, 190], [266, 228], [254, 228]] }
+    },
+    {
+      "id": "pine",
+      "name": "뾰족 나무",
+      "color": "#3E8E4E",
+      "adjBig": "나무가 큰",
+      "adjSmall": "나무가 작은",
+      "shape": { "type": "polygon", "points": [[232, 196], [260, 126], [288, 196]] }
+    },
+    {
+      "id": "tent",
+      "name": "텐트",
+      "color": "#F0913F",
+      "adjBig": "텐트가 큰",
+      "adjSmall": "텐트가 작은",
+      "shape": { "type": "polygon", "points": [[44, 230], [150, 72], [256, 230]] }
+    },
+    {
+      "id": "door",
+      "name": "문",
+      "color": "#7A4A2A",
+      "adjBig": "문이 큰",
+      "adjSmall": "문이 작은",
+      "shape": { "type": "polygon", "points": [[118, 230], [150, 150], [182, 230]] }
+    },
+    {
+      "id": "pole",
+      "name": "깃대",
+      "color": "#8E6B4A",
+      "adjBig": "깃대가 긴",
+      "adjSmall": "깃대가 짧은",
+      "shape": { "type": "polygon", "points": [[145, 38], [155, 38], [155, 76], [145, 76]] }
+    },
+    {
+      "id": "flag",
+      "name": "깃발",
+      "color": "#D8452F",
+      "adjBig": "깃발이 큰",
+      "adjSmall": "깃발이 작은",
+      "shape": { "type": "polygon", "points": [[155, 38], [188, 49], [155, 60]] }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "tree",
+  "name": "크리스마스트리",
+  "noun": "트리",
+  "level": 2,
+  "practice": false,
+  "description": "삼각형을 층층이 쌓아요.",
+  "pieces": [
+    {
+      "id": "pot",
+      "name": "화분",
+      "color": "#D8452F",
+      "adjBig": "화분이 큰",
+      "adjSmall": "화분이 작은",
+      "shape": { "type": "polygon", "points": [[112, 262], [188, 262], [178, 290], [122, 290]] }
+    },
+    {
+      "id": "trunk",
+      "name": "줄기",
+      "color": "#8E6B4A",
+      "adjBig": "줄기가 굵은",
+      "adjSmall": "줄기가 가는",
+      "shape": { "type": "polygon", "points": [[136, 236], [164, 236], [164, 266], [136, 266]] }
+    },
+    {
+      "id": "layer1",
+      "name": "아래 잎",
+      "color": "#3E8E4E",
+      "adjBig": "아래 잎이 큰",
+      "adjSmall": "아래 잎이 작은",
+      "shape": { "type": "polygon", "points": [[58, 244], [150, 148], [242, 244]] }
+    },
+    {
+      "id": "layer2",
+      "name": "가운데 잎",
+      "color": "#4FA25F",
+      "adjBig": "가운데 잎이 큰",
+      "adjSmall": "가운데 잎이 작은",
+      "shape": { "type": "polygon", "points": [[78, 182], [150, 96], [222, 182]] }
+    },
+    {
+      "id": "layer3",
+      "name": "위 잎",
+      "color": "#6BBF7A",
+      "adjBig": "위 잎이 큰",
+      "adjSmall": "위 잎이 작은",
+      "shape": { "type": "polygon", "points": [[100, 124], [150, 50], [200, 124]] }
+    },
+    {
+      "id": "topper",
+      "name": "꼭대기 장식",
+      "color": "#F5D547",
+      "adjBig": "장식이 큰",
+      "adjSmall": "장식이 작은",
+      "shape": { "type": "polygon", "points": [[150, 22], [165, 40], [150, 58], [135, 40]] }
+    }
+  ]
+}

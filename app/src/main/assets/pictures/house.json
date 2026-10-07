@@ -1,0 +1,66 @@
+{
+  "id": "house",
+  "name": "집",
+  "noun": "집",
+  "level": 1,
+  "practice": false,
+  "description": "직선만 있어요. 방향 바꾸기를 익히기 좋아요.",
+  "pieces": [
+    {
+      "id": "grass",
+      "name": "잔디",
+      "color": "#6BBF7A",
+      "adjBig": "잔디밭이 넓은",
+      "adjSmall": "잔디밭이 좁은",
+      "shape": { "type": "polygon", "points": [[30, 258], [270, 258], [270, 282], [30, 282]] }
+    },
+    {
+      "id": "chimney",
+      "name": "굴뚝",
+      "color": "#8E6B4A",
+      "adjBig": "굴뚝이 큰",
+      "adjSmall": "굴뚝이 작은",
+      "shape": { "type": "polygon", "points": [[180, 78], [204, 78], [204, 128], [180, 128]] }
+    },
+    {
+      "id": "wall",
+      "name": "벽",
+      "color": "#F5D547",
+      "adjBig": "벽이 넓은",
+      "adjSmall": "벽이 좁은",
+      "shape": { "type": "polygon", "points": [[82, 150], [218, 150], [218, 260], [82, 260]] }
+    },
+    {
+      "id": "roof",
+      "name": "지붕",
+      "color": "#D8452F",
+      "adjBig": "지붕이 큰",
+      "adjSmall": "지붕이 작은",
+      "shape": { "type": "polygon", "points": [[64, 154], [150, 80], [236, 154]] }
+    },
+    {
+      "id": "door",
+      "name": "문",
+      "color": "#8E6B4A",
+      "adjBig": "문이 큰",
+      "adjSmall": "문이 작은",
+      "shape": { "type": "polygon", "points": [[132, 200], [168, 200], [168, 260], [132, 260]] }
+    },
+    {
+      "id": "windowL",
+      "name": "왼쪽 창문",
+      "color": "#6FB7E9",
+      "adjBig": "창문이 큰",
+      "adjSmall": "창문이 작은",
+      "shape": { "type": "polygon", "points": [[94, 170], [124, 170], [124, 198], [94, 198]] }
+    },
+    {
+      "id": "windowR",
+      "name": "오른쪽 창문",
+      "color": "#6FB7E9",
+      "adjBig": "창문이 큰",
+      "adjSmall": "창문이 작은",
+      "shape": { "type": "polygon", "points": [[176, 170], [206, 170], [206, 198], [176, 198]] }
+    }
+  ]
+}

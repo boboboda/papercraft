@@ -1,0 +1,18 @@
+{
+  "id": "practice",
+  "name": "연습: 네모 오리기",
+  "noun": "네모",
+  "level": 0,
+  "practice": true,
+  "description": "조작을 익히는 연습 판이에요. 색종이가 무제한이에요.",
+  "pieces": [
+    {
+      "id": "square",
+      "name": "네모",
+      "color": "#F0913F",
+      "adjBig": "네모가 큰",
+      "adjSmall": "네모가 작은",
+      "shape": { "type": "polygon", "points": [[110, 110], [190, 110], [190, 190], [110, 190]] }
+    }
+  ]
+}

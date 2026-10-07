@@ -1,0 +1,90 @@
+{
+  "id": "snail",
+  "name": "달팽이",
+  "noun": "달팽이",
+  "level": 3,
+  "practice": false,
+  "description": "동그라미를 겹쳐 껍데기를 만들어요.",
+  "pieces": [
+    {
+      "id": "ground",
+      "name": "풀밭",
+      "color": "#6BBF7A",
+      "adjBig": "풀밭이 넓은",
+      "adjSmall": "풀밭이 좁은",
+      "shape": { "type": "polygon", "points": [[16, 246], [284, 246], [284, 270], [16, 270]] }
+    },
+    {
+      "id": "stalkL",
+      "name": "왼쪽 더듬이",
+      "color": "#FCE6C9",
+      "adjBig": "더듬이가 긴",
+      "adjSmall": "더듬이가 짧은",
+      "shape": { "type": "polygon", "points": [[68.9, 158.8], [56.9, 110.8], [47.1, 113.2], [59.1, 161.2]] }
+    },
+    {
+      "id": "stalkR",
+      "name": "오른쪽 더듬이",
+      "color": "#FCE6C9",
+      "adjBig": "더듬이가 긴",
+      "adjSmall": "더듬이가 짧은",
+      "shape": { "type": "polygon", "points": [[84.9, 161], [94.9, 113], [85.1, 111], [75.1, 159]] }
+    },
+    {
+      "id": "tipL",
+      "name": "왼쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 51, "cy": 108, "rx": 8, "ry": 8 }
+    },
+    {
+      "id": "tipR",
+      "name": "오른쪽 눈",
+      "color": "#2E2A26",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "ellipse", "cx": 91, "cy": 108, "rx": 8, "ry": 8 }
+    },
+    {
+      "id": "head",
+      "name": "머리",
+      "color": "#FCE6C9",
+      "adjBig": "머리가 큰",
+      "adjSmall": "머리가 작은",
+      "shape": { "type": "ellipse", "cx": 72, "cy": 190, "rx": 24, "ry": 36 }
+    },
+    {
+      "id": "body",
+      "name": "몸",
+      "color": "#FCE6C9",
+      "adjBig": "몸이 긴",
+      "adjSmall": "몸이 짧은",
+      "shape": { "type": "ellipse", "cx": 152, "cy": 228, "rx": 112, "ry": 20 }
+    },
+    {
+      "id": "shell",
+      "name": "껍데기",
+      "color": "#B07A4A",
+      "adjBig": "껍데기가 큰",
+      "adjSmall": "껍데기가 작은",
+      "shape": { "type": "ellipse", "cx": 166, "cy": 152, "rx": 66, "ry": 66 }
+    },
+    {
+      "id": "ring",
+      "name": "껍데기 무늬",
+      "color": "#D29A62",
+      "adjBig": "무늬가 큰",
+      "adjSmall": "무늬가 작은",
+      "shape": { "type": "ellipse", "cx": 166, "cy": 152, "rx": 42, "ry": 42 }
+    },
+    {
+      "id": "core",
+      "name": "껍데기 가운데",
+      "color": "#8E5A30",
+      "adjBig": "가운데가 큰",
+      "adjSmall": "가운데가 작은",
+      "shape": { "type": "ellipse", "cx": 166, "cy": 152, "rx": 18, "ry": 18 }
+    }
+  ]
+}

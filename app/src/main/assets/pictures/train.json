@@ -1,0 +1,98 @@
+{
+  "id": "train",
+  "name": "기차",
+  "noun": "기차",
+  "level": 1,
+  "practice": false,
+  "description": "네모가 많아요. 바퀴도 네모예요.",
+  "pieces": [
+    {
+      "id": "rail",
+      "name": "철길",
+      "color": "#8E6B4A",
+      "adjBig": "철길이 넓은",
+      "adjSmall": "철길이 좁은",
+      "shape": { "type": "polygon", "points": [[16, 240], [284, 240], [284, 252], [16, 252]] }
+    },
+    {
+      "id": "chimney",
+      "name": "굴뚝",
+      "color": "#7A7F87",
+      "adjBig": "굴뚝이 큰",
+      "adjSmall": "굴뚝이 작은",
+      "shape": { "type": "polygon", "points": [[56, 112], [78, 112], [78, 152], [56, 152]] }
+    },
+    {
+      "id": "cabin",
+      "name": "운전실",
+      "color": "#B8352A",
+      "adjBig": "운전실이 큰",
+      "adjSmall": "운전실이 작은",
+      "shape": { "type": "polygon", "points": [[100, 106], [152, 106], [152, 152], [100, 152]] }
+    },
+    {
+      "id": "engine",
+      "name": "기관차",
+      "color": "#D8452F",
+      "adjBig": "기관차가 큰",
+      "adjSmall": "기관차가 작은",
+      "shape": { "type": "polygon", "points": [[40, 150], [152, 150], [152, 222], [40, 222]] }
+    },
+    {
+      "id": "window",
+      "name": "창문",
+      "color": "#6FB7E9",
+      "adjBig": "창문이 큰",
+      "adjSmall": "창문이 작은",
+      "shape": { "type": "polygon", "points": [[112, 118], [140, 118], [140, 142], [112, 142]] }
+    },
+    {
+      "id": "link",
+      "name": "연결고리",
+      "color": "#2E2A26",
+      "adjBig": "연결고리가 긴",
+      "adjSmall": "연결고리가 짧은",
+      "shape": { "type": "polygon", "points": [[150, 194], [168, 194], [168, 206], [150, 206]] }
+    },
+    {
+      "id": "wagon",
+      "name": "객차",
+      "color": "#2E6FB7",
+      "adjBig": "객차가 큰",
+      "adjSmall": "객차가 작은",
+      "shape": { "type": "polygon", "points": [[166, 158], [266, 158], [266, 222], [166, 222]] }
+    },
+    {
+      "id": "wheel1",
+      "name": "첫째 바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "polygon", "points": [[50, 220], [82, 220], [82, 242], [50, 242]] }
+    },
+    {
+      "id": "wheel2",
+      "name": "둘째 바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "polygon", "points": [[110, 220], [142, 220], [142, 242], [110, 242]] }
+    },
+    {
+      "id": "wheel3",
+      "name": "셋째 바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "polygon", "points": [[176, 220], [208, 220], [208, 242], [176, 242]] }
+    },
+    {
+      "id": "wheel4",
+      "name": "넷째 바퀴",
+      "color": "#2E2A26",
+      "adjBig": "바퀴가 큰",
+      "adjSmall": "바퀴가 작은",
+      "shape": { "type": "polygon", "points": [[224, 220], [256, 220], [256, 242], [224, 242]] }
+    }
+  ]
+}

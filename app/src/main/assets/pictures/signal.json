@@ -1,0 +1,58 @@
+{
+  "id": "signal",
+  "name": "신호등",
+  "noun": "신호등",
+  "level": 2,
+  "practice": false,
+  "description": "같은 크기 동그라미 세 개를 맞춰요.",
+  "pieces": [
+    {
+      "id": "base",
+      "name": "받침",
+      "color": "#7A7F87",
+      "adjBig": "받침이 큰",
+      "adjSmall": "받침이 작은",
+      "shape": { "type": "polygon", "points": [[114, 270], [186, 270], [186, 286], [114, 286]] }
+    },
+    {
+      "id": "pole",
+      "name": "기둥",
+      "color": "#7A7F87",
+      "adjBig": "기둥이 굵은",
+      "adjSmall": "기둥이 가는",
+      "shape": { "type": "polygon", "points": [[140, 196], [160, 196], [160, 276], [140, 276]] }
+    },
+    {
+      "id": "box",
+      "name": "신호등 몸",
+      "color": "#3B3F46",
+      "adjBig": "신호등이 큰",
+      "adjSmall": "신호등이 작은",
+      "shape": { "type": "polygon", "points": [[104, 28], [196, 28], [196, 204], [104, 204]] }
+    },
+    {
+      "id": "red",
+      "name": "빨간불",
+      "color": "#E5483B",
+      "adjBig": "빨간불이 큰",
+      "adjSmall": "빨간불이 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 62, "rx": 24, "ry": 24 }
+    },
+    {
+      "id": "yellow",
+      "name": "노란불",
+      "color": "#F5D547",
+      "adjBig": "노란불이 큰",
+      "adjSmall": "노란불이 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 117, "rx": 24, "ry": 24 }
+    },
+    {
+      "id": "green",
+      "name": "초록불",
+      "color": "#3DBE6B",
+      "adjBig": "초록불이 큰",
+      "adjSmall": "초록불이 작은",
+      "shape": { "type": "ellipse", "cx": 150, "cy": 172, "rx": 24, "ry": 24 }
+    }
+  ]
+}

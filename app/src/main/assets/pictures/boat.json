@@ -1,0 +1,66 @@
+{
+  "id": "boat",
+  "name": "돛단배",
+  "noun": "돛단배",
+  "level": 2,
+  "practice": false,
+  "description": "비스듬한 돛과 가는 돛대가 있어요.",
+  "pieces": [
+    {
+      "id": "sun",
+      "name": "해",
+      "color": "#F5D547",
+      "adjBig": "해가 큰",
+      "adjSmall": "해가 작은",
+      "shape": { "type": "polygon", "points": [[247.9, 38], [262, 52.1], [262, 71.9], [247.9, 86], [228.1, 86], [214, 71.9], [214, 52.1], [228.1, 38]] }
+    },
+    {
+      "id": "sea",
+      "name": "바다",
+      "color": "#2E6FB7",
+      "adjBig": "바다가 넓은",
+      "adjSmall": "바다가 좁은",
+      "shape": { "type": "polygon", "points": [[20, 232], [280, 232], [280, 282], [20, 282]] }
+    },
+    {
+      "id": "mast",
+      "name": "돛대",
+      "color": "#8E6B4A",
+      "adjBig": "돛대가 굵은",
+      "adjSmall": "돛대가 가는",
+      "shape": { "type": "polygon", "points": [[145, 72], [155, 72], [155, 218], [145, 218]] }
+    },
+    {
+      "id": "sailBig",
+      "name": "큰 돛",
+      "color": "#F0913F",
+      "adjBig": "돛이 큰",
+      "adjSmall": "돛이 작은",
+      "shape": { "type": "polygon", "points": [[160, 84], [160, 204], [232, 204]] }
+    },
+    {
+      "id": "sailSmall",
+      "name": "작은 돛",
+      "color": "#F4A259",
+      "adjBig": "돛이 큰",
+      "adjSmall": "돛이 작은",
+      "shape": { "type": "polygon", "points": [[140, 110], [140, 204], [90, 204]] }
+    },
+    {
+      "id": "hull",
+      "name": "배",
+      "color": "#D8452F",
+      "adjBig": "배가 큰",
+      "adjSmall": "배가 작은",
+      "shape": { "type": "polygon", "points": [[74, 214], [226, 214], [204, 248], [96, 248]] }
+    },
+    {
+      "id": "flag",
+      "name": "깃발",
+      "color": "#6FB7E9",
+      "adjBig": "깃발이 큰",
+      "adjSmall": "깃발이 작은",
+      "shape": { "type": "polygon", "points": [[155, 60], [155, 78], [178, 69]] }
+    }
+  ]
+}

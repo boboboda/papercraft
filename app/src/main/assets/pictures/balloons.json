@@ -1,0 +1,82 @@
+{
+  "id": "balloons",
+  "name": "풍선 다발",
+  "noun": "풍선",
+  "level": 2,
+  "practice": false,
+  "description": "타원 풍선과 가늘고 긴 끈이 있어요.",
+  "pieces": [
+    {
+      "id": "string1",
+      "name": "빨간 풍선 끈",
+      "color": "#7A7F87",
+      "adjBig": "끈이 굵은",
+      "adjSmall": "끈이 가는",
+      "shape": { "type": "polygon", "points": [[95.4, 142], [151.4, 270], [160.6, 266], [104.6, 138]] }
+    },
+    {
+      "id": "string2",
+      "name": "파란 풍선 끈",
+      "color": "#7A7F87",
+      "adjBig": "끈이 굵은",
+      "adjSmall": "끈이 가는",
+      "shape": { "type": "polygon", "points": [[165, 124.5], [151, 267.5], [161, 268.5], [175, 125.5]] }
+    },
+    {
+      "id": "string3",
+      "name": "노란 풍선 끈",
+      "color": "#7A7F87",
+      "adjBig": "끈이 굵은",
+      "adjSmall": "끈이 가는",
+      "shape": { "type": "polygon", "points": [[211.8, 175.2], [151.8, 265.2], [160.2, 270.8], [220.2, 180.8]] }
+    },
+    {
+      "id": "balloon1",
+      "name": "빨간 풍선",
+      "color": "#D8452F",
+      "adjBig": "풍선이 큰",
+      "adjSmall": "풍선이 작은",
+      "shape": { "type": "ellipse", "cx": 100, "cy": 96, "rx": 38, "ry": 46 }
+    },
+    {
+      "id": "balloon2",
+      "name": "파란 풍선",
+      "color": "#2E6FB7",
+      "adjBig": "풍선이 큰",
+      "adjSmall": "풍선이 작은",
+      "shape": { "type": "ellipse", "cx": 170, "cy": 80, "rx": 38, "ry": 46 }
+    },
+    {
+      "id": "balloon3",
+      "name": "노란 풍선",
+      "color": "#F5D547",
+      "adjBig": "풍선이 큰",
+      "adjSmall": "풍선이 작은",
+      "shape": { "type": "ellipse", "cx": 216, "cy": 136, "rx": 36, "ry": 44 }
+    },
+    {
+      "id": "shine1",
+      "name": "빨간 풍선 반짝이",
+      "color": "#FFFFFF",
+      "adjBig": "반짝이가 큰",
+      "adjSmall": "반짝이가 작은",
+      "shape": { "type": "ellipse", "cx": 86, "cy": 76, "rx": 7, "ry": 11 }
+    },
+    {
+      "id": "shine2",
+      "name": "파란 풍선 반짝이",
+      "color": "#FFFFFF",
+      "adjBig": "반짝이가 큰",
+      "adjSmall": "반짝이가 작은",
+      "shape": { "type": "ellipse", "cx": 156, "cy": 60, "rx": 7, "ry": 11 }
+    },
+    {
+      "id": "shine3",
+      "name": "노란 풍선 반짝이",
+      "color": "#FFFFFF",
+      "adjBig": "반짝이가 큰",
+      "adjSmall": "반짝이가 작은",
+      "shape": { "type": "ellipse", "cx": 202, "cy": 116, "rx": 7, "ry": 11 }
+    }
+  ]
+}

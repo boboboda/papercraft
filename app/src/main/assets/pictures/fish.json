@@ -1,0 +1,58 @@
+{
+  "id": "fish",
+  "name": "물고기",
+  "noun": "물고기",
+  "level": 2,
+  "practice": false,
+  "description": "마름모 몸통과 삼각형 지느러미예요.",
+  "pieces": [
+    {
+      "id": "tail",
+      "name": "꼬리",
+      "color": "#1F4F86",
+      "adjBig": "꼬리가 큰",
+      "adjSmall": "꼬리가 작은",
+      "shape": { "type": "polygon", "points": [[198, 150], [256, 102], [256, 198]] }
+    },
+    {
+      "id": "finTop",
+      "name": "등지느러미",
+      "color": "#6FB7E9",
+      "adjBig": "지느러미가 큰",
+      "adjSmall": "지느러미가 작은",
+      "shape": { "type": "polygon", "points": [[108, 108], [150, 66], [162, 116]] }
+    },
+    {
+      "id": "finBottom",
+      "name": "배지느러미",
+      "color": "#6FB7E9",
+      "adjBig": "지느러미가 큰",
+      "adjSmall": "지느러미가 작은",
+      "shape": { "type": "polygon", "points": [[114, 192], [146, 228], [152, 190]] }
+    },
+    {
+      "id": "body",
+      "name": "몸통",
+      "color": "#2E6FB7",
+      "adjBig": "물고기가 통통한",
+      "adjSmall": "물고기가 홀쭉한",
+      "shape": { "type": "polygon", "points": [[56, 150], [128, 94], [212, 150], [128, 206]] }
+    },
+    {
+      "id": "eye",
+      "name": "눈",
+      "color": "#2E2A26",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "polygon", "points": [[92, 132], [101, 141], [92, 150], [83, 141]] }
+    },
+    {
+      "id": "gill",
+      "name": "아가미",
+      "color": "#6FB7E9",
+      "adjBig": "아가미가 큰",
+      "adjSmall": "아가미가 작은",
+      "shape": { "type": "polygon", "points": [[118, 120], [128, 150], [118, 180], [112, 150]] }
+    }
+  ]
+}

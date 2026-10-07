@@ -1,0 +1,106 @@
+{
+  "id": "robot",
+  "name": "로봇",
+  "noun": "로봇",
+  "level": 1,
+  "practice": false,
+  "description": "크고 작은 네모가 가득해요.",
+  "pieces": [
+    {
+      "id": "antenna",
+      "name": "안테나",
+      "color": "#7A7F87",
+      "adjBig": "안테나가 긴",
+      "adjSmall": "안테나가 짧은",
+      "shape": { "type": "polygon", "points": [[145, 26], [155, 26], [155, 52], [145, 52]] }
+    },
+    {
+      "id": "neck",
+      "name": "목",
+      "color": "#7A7F87",
+      "adjBig": "목이 긴",
+      "adjSmall": "목이 짧은",
+      "shape": { "type": "polygon", "points": [[134, 104], [166, 104], [166, 124], [134, 124]] }
+    },
+    {
+      "id": "head",
+      "name": "머리",
+      "color": "#C9CDD2",
+      "adjBig": "머리가 큰",
+      "adjSmall": "머리가 작은",
+      "shape": { "type": "polygon", "points": [[108, 48], [192, 48], [192, 110], [108, 110]] }
+    },
+    {
+      "id": "eyeL",
+      "name": "왼쪽 눈",
+      "color": "#6FB7E9",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "polygon", "points": [[124, 66], [144, 66], [144, 84], [124, 84]] }
+    },
+    {
+      "id": "eyeR",
+      "name": "오른쪽 눈",
+      "color": "#6FB7E9",
+      "adjBig": "눈이 큰",
+      "adjSmall": "눈이 작은",
+      "shape": { "type": "polygon", "points": [[156, 66], [176, 66], [176, 84], [156, 84]] }
+    },
+    {
+      "id": "mouth",
+      "name": "입",
+      "color": "#2E2A26",
+      "adjBig": "입이 큰",
+      "adjSmall": "입이 작은",
+      "shape": { "type": "polygon", "points": [[128, 92], [172, 92], [172, 103], [128, 103]] }
+    },
+    {
+      "id": "armL",
+      "name": "왼쪽 팔",
+      "color": "#7A7F87",
+      "adjBig": "팔이 긴",
+      "adjSmall": "팔이 짧은",
+      "shape": { "type": "polygon", "points": [[64, 126], [96, 126], [96, 194], [64, 194]] }
+    },
+    {
+      "id": "armR",
+      "name": "오른쪽 팔",
+      "color": "#7A7F87",
+      "adjBig": "팔이 긴",
+      "adjSmall": "팔이 짧은",
+      "shape": { "type": "polygon", "points": [[204, 126], [236, 126], [236, 194], [204, 194]] }
+    },
+    {
+      "id": "legL",
+      "name": "왼쪽 다리",
+      "color": "#7A7F87",
+      "adjBig": "다리가 긴",
+      "adjSmall": "다리가 짧은",
+      "shape": { "type": "polygon", "points": [[110, 206], [140, 206], [140, 266], [110, 266]] }
+    },
+    {
+      "id": "legR",
+      "name": "오른쪽 다리",
+      "color": "#7A7F87",
+      "adjBig": "다리가 긴",
+      "adjSmall": "다리가 짧은",
+      "shape": { "type": "polygon", "points": [[160, 206], [190, 206], [190, 266], [160, 266]] }
+    },
+    {
+      "id": "body",
+      "name": "몸통",
+      "color": "#C9CDD2",
+      "adjBig": "몸통이 큰",
+      "adjSmall": "몸통이 작은",
+      "shape": { "type": "polygon", "points": [[94, 118], [206, 118], [206, 212], [94, 212]] }
+    },
+    {
+      "id": "panel",
+      "name": "가슴판",
+      "color": "#F5D547",
+      "adjBig": "가슴판이 큰",
+      "adjSmall": "가슴판이 작은",
+      "shape": { "type": "polygon", "points": [[124, 140], [176, 140], [176, 176], [124, 176]] }
+    }
+  ]
+}

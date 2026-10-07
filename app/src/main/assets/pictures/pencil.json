@@ -1,0 +1,58 @@
+{
+  "id": "pencil",
+  "name": "연필",
+  "noun": "연필",
+  "level": 1,
+  "practice": false,
+  "description": "길쭉한 네모를 반듯하게 잘라요.",
+  "pieces": [
+    {
+      "id": "eraser",
+      "name": "지우개",
+      "color": "#EF7A8C",
+      "adjBig": "지우개가 큰",
+      "adjSmall": "지우개가 작은",
+      "shape": { "type": "polygon", "points": [[28, 128], [62, 128], [62, 172], [28, 172]] }
+    },
+    {
+      "id": "band",
+      "name": "쇠 띠",
+      "color": "#C9CDD2",
+      "adjBig": "쇠 띠가 넓은",
+      "adjSmall": "쇠 띠가 좁은",
+      "shape": { "type": "polygon", "points": [[56, 126], [76, 126], [76, 174], [56, 174]] }
+    },
+    {
+      "id": "body",
+      "name": "몸통",
+      "color": "#F5D547",
+      "adjBig": "연필이 굵은",
+      "adjSmall": "연필이 가는",
+      "shape": { "type": "polygon", "points": [[76, 128], [210, 128], [210, 172], [76, 172]] }
+    },
+    {
+      "id": "stripe",
+      "name": "줄무늬",
+      "color": "#E0B92E",
+      "adjBig": "줄무늬가 굵은",
+      "adjSmall": "줄무늬가 가는",
+      "shape": { "type": "polygon", "points": [[76, 143], [210, 143], [210, 157], [76, 157]] }
+    },
+    {
+      "id": "wood",
+      "name": "나무 끝",
+      "color": "#E7C27D",
+      "adjBig": "끝이 뭉툭한",
+      "adjSmall": "끝이 짧은",
+      "shape": { "type": "polygon", "points": [[210, 128], [258, 150], [210, 172]] }
+    },
+    {
+      "id": "lead",
+      "name": "심",
+      "color": "#2E2A26",
+      "adjBig": "심이 굵은",
+      "adjSmall": "심이 짧은",
+      "shape": { "type": "polygon", "points": [[240, 141], [260, 150], [240, 159]] }
+    }
+  ]
+}
