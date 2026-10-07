@@ -1,12 +1,14 @@
 package com.buyoungsil.papercraftlab.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.buyoungsil.papercraftlab.core.analytics.Analytics
 import com.buyoungsil.papercraftlab.feature.gallery.GalleryScreen
 import com.buyoungsil.papercraftlab.feature.menu.MenuScreen
 import com.buyoungsil.papercraftlab.feature.play.PlayScreen
@@ -23,6 +25,13 @@ object Routes {
 @Composable
 fun AppNavHost(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
+
+    // 화면 이동마다 screen_view ("play/{pictureId}" 는 "play" 로 묶는다)
+    LaunchedEffect(navController) {
+        navController.currentBackStackEntryFlow.collect { entry ->
+            Analytics.screen(entry.destination.route?.substringBefore('/') ?: "unknown")
+        }
+    }
 
     NavHost(
         navController = navController,

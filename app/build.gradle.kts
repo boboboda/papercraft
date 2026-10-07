@@ -29,6 +29,15 @@ android {
         versionName = "0.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // ★ 앱 분석 (홈페이지 /admin/analytics). 수집 키는 저장소에 올리지 않고
+        //   ~/.gradle/gradle.properties 에 ANALYTICS_KEY=ak_xxx 로 둔다. 비어 있으면 분석은 꺼진다.
+        buildConfigField("String", "ANALYTICS_URL", "\"https://buyoungsilcoding.com\"")
+        buildConfigField(
+            "String",
+            "ANALYTICS_KEY",
+            "\"${providers.gradleProperty("ANALYTICS_KEY").orElse("").get()}\""
+        )
     }
 
     buildTypes {

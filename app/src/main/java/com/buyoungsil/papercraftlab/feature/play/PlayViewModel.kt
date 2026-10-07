@@ -7,6 +7,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.buyoungsil.papercraftlab.core.ads.AdManager                           // ★
+import com.buyoungsil.papercraftlab.core.analytics.Analytics
 import com.buyoungsil.papercraftlab.core.feedback.Feedback
 import com.buyoungsil.papercraftlab.data.model.Artwork
 import com.buyoungsil.papercraftlab.data.model.ArtworkPiece
@@ -84,6 +85,10 @@ class PlayViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val picture = pictureRepository.picture(pictureId)
+                Analytics.feature(
+                    "picture_start",
+                    mapOf("picture" to pictureId, "practice" to picture.practice)
+                )
                 _uiState.value = PlayUiState(
                     loading = false,
                     picture = picture,
@@ -170,7 +175,10 @@ class PlayViewModel @Inject constructor(
                 s.markUsed()
                 _uiState.update { it.copy(papersLeft = left - 1) }
             }
-            else -> _uiState.update { it.copy(dialog = PlayDialog.OutOfPaper) }
+            else -> {
+                Analytics.feature("out_of_paper", mapOf("picture" to pictureId))
+                _uiState.update { it.copy(dialog = PlayDialog.OutOfPaper) }
+            }
         }
     }
 
@@ -300,6 +308,15 @@ class PlayViewModel @Inject constructor(
             PieceResult(piece = piece, score = state.placed[piece.id]?.score)   // 안 붙인 조각 = null
         }
         val summary = TitleMaker.summarize(picture.noun, results)
+        Analytics.feature(
+            "picture_complete",
+            mapOf(
+                "picture" to picture.id,
+                "stars" to summary.stars,
+                "placed" to state.placed.size,
+                "practice" to picture.practice
+            )
+        )
 
         viewModelScope.launch {
             if (!picture.practice) {
@@ -407,8 +424,13 @@ class PlayViewModel @Inject constructor(
                 false
             }
             Stage.SKETCH -> {
-                if (state.placed.isEmpty() || state.dialog == PlayDialog.ConfirmExit) true
-                else {
+                if (state.placed.isEmpty() || state.dialog == PlayDialog.ConfirmExit) {
+                    Analytics.feature(
+                        "picture_exit",
+                        mapOf("picture" to pictureId, "placed" to state.placed.size)
+                    )
+                    true
+                } else {
                     _uiState.update { it.copy(dialog = PlayDialog.ConfirmExit) }
                     false
                 }

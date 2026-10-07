@@ -5,12 +5,14 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.util.Log
 import com.buyoungsil.papercraftlab.BuildConfig
+import com.buyoungsil.papercraftlab.core.analytics.Analytics
 import com.buyoungsil.papercraftlab.game.logic.PaperRules
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.OnPaidEventListener
 import com.google.android.gms.ads.RequestConfiguration
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
@@ -94,11 +96,16 @@ class AdManager @Inject constructor(
                     loadingRewarded = false
                     rewardedRetry = 0
                     _rewardedReady.value = true
+                    ad.onPaidEventListener = OnPaidEventListener { v ->
+                        Analytics.Ads.paid(FORMAT_REWARDED, v.valueMicros, v.currencyCode)
+                    }
+                    Analytics.Ads.loaded(FORMAT_REWARDED)
                 }
 
                 override fun onAdFailedToLoad(error: LoadAdError) {
                     loadingRewarded = false
                     Log.w(TAG, "보상형 불러오기 실패: ${error.message}")
+                    Analytics.Ads.loadFailed(FORMAT_REWARDED, error.code)
                     retryLater(rewardedRetry++) { loadRewarded() }
                 }
             }
@@ -118,6 +125,9 @@ class AdManager @Inject constructor(
         }
         var earned = false
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdImpression() = Analytics.Ads.impression(FORMAT_REWARDED)
+            override fun onAdClicked() = Analytics.Ads.click(FORMAT_REWARDED)
+
             override fun onAdDismissedFullScreenContent() {
                 clearRewarded()
                 onResult(earned)
@@ -129,7 +139,10 @@ class AdManager @Inject constructor(
                 onResult(false)
             }
         }
-        ad.show(activity) { earned = true }        // 끝까지 보면 불림
+        ad.show(activity) {                        // 끝까지 보면 불림
+            earned = true
+            Analytics.Ads.rewardEarned(FORMAT_REWARDED)
+        }
     }
 
     private fun clearRewarded() {
@@ -152,11 +165,16 @@ class AdManager @Inject constructor(
                     interstitial = ad
                     loadingInterstitial = false
                     interstitialRetry = 0
+                    ad.onPaidEventListener = OnPaidEventListener { v ->
+                        Analytics.Ads.paid(FORMAT_INTERSTITIAL, v.valueMicros, v.currencyCode)
+                    }
+                    Analytics.Ads.loaded(FORMAT_INTERSTITIAL)
                 }
 
                 override fun onAdFailedToLoad(error: LoadAdError) {
                     loadingInterstitial = false
                     Log.w(TAG, "전면 불러오기 실패: ${error.message}")
+                    Analytics.Ads.loadFailed(FORMAT_INTERSTITIAL, error.code)
                     retryLater(interstitialRetry++) { loadInterstitial() }
                 }
             }
@@ -183,6 +201,9 @@ class AdManager @Inject constructor(
             return
         }
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdImpression() = Analytics.Ads.impression(FORMAT_INTERSTITIAL)
+            override fun onAdClicked() = Analytics.Ads.click(FORMAT_INTERSTITIAL)
+
             override fun onAdDismissedFullScreenContent() {
                 interstitial = null
                 loadInterstitial()
@@ -212,6 +233,8 @@ class AdManager @Inject constructor(
 
     private companion object {
         const val TAG = "AdManager"
+        const val FORMAT_REWARDED = "rewarded"
+        const val FORMAT_INTERSTITIAL = "interstitial"
 
         /**
          * 대상 연령에 13세 미만이 포함되면 true 로 바꿀 것 (구글 가족 정책).
